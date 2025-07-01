@@ -60,10 +60,14 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	width: 1000px;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
 	background: #fff;
 	box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 	font-size: 16px;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 h1 {
@@ -155,8 +159,7 @@ section {
 		overflow-x: hidden;
 	}
 	.card {
-		width: 100%;
-		max-width: 300px;
+		width: calc(50% - 20px); /* Dois cards por linha */
 	}
 }
 
