@@ -146,3 +146,36 @@ section {
 	margin-bottom: 40px;
 }
 
+/* Para dispositivos móveis: linha única com rolagem horizontal */
+@media (max-width: 599px) {
+	.cardContainer {
+		flex-wrap: nowrap;          /* força os cards ficarem em linha */
+		overflow-x: auto;           /* permite rolagem horizontal */
+		justify-content: flex-start; /* alinhamento à esquerda */
+		-webkit-overflow-scrolling: touch; /* rolagem suave no iOS */
+		padding-bottom: 10px;       /* um pouco de espaço para a rolagem */
+	}
+	.card {
+		flex: 0 0 auto;             /* cards com largura fixa, sem encolher */
+		width: 180px;               /* mesma largura padrão */
+	}
+}
+
+/* Media Query para telas maiores (tablets, desktops) */
+@media (min-width: 600px) {
+  .card {
+    width: calc(50% - 20px); /* Dois cards por linha */
+  }
+}
+
+@media (min-width: 900px) {
+  .card {
+    width: calc(33.33% - 20px); /* Três cards por linha */
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: calc(25% - 20px); /* Quatro cards por linha */
+  }
+}
