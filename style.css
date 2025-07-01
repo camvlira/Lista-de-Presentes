@@ -139,7 +139,7 @@ textarea {
 .card a {
 	text-decoration: none;
 	font-weight: bold;
-	color: #3b5998;
+	color: #1d2026;
 }
 
 section {
@@ -174,9 +174,9 @@ section {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .card {
-    width: calc(25% - 20px); /* Quatro cards por linha */
+    width: calc(18% - 20px); /* Quatro cards por linha */
   }
 }
 
