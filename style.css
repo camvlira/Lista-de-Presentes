@@ -1,3 +1,4 @@
+/* Eric Meyer's CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,10 +43,7 @@ table {
 	border-spacing: 0;
 }
 
-
-
 html{
-    /* font-size: 62.5%; */
     scroll-behavior: smooth;
 }
 
@@ -58,13 +56,24 @@ body{
     overflow-y: scroll;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 1rem 5rem; */
+    width: 1000;
+    background: #fff;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+    font-size: 62.5%;
+    /* z-index: 1000; */
+}
+
 h1{
     font-weight: bold;
 }
 
 a{
     text-decoration: none;
-    color: inherit;
 }
 
 li{
@@ -75,40 +84,27 @@ textarea{
     resize: none;
 }
 
-.subtitulo{
-    font-weight: bold;
-}
-
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 5rem;
-    font-size: 62.5%;
-    /* position: fixed; */
-    width: 100%;
-    z-index: 1000;
-    background: #fff;
-    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
-}
-
-.header_links{
+.headerLinks{
     display: flex;
     list-style-type: none;
 }
 
 .opcoes{
-    padding: 2.2rem 3rem;
-    display: inline-block;
-    font-size:18px;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    /* display: inline-block; */
+    padding: 28px;
+    font-size: 18px;
     font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333;
     transition: color .3s;
+}
+
+.subtitulo{
+    font-weight: bold;
 }
 
 .imagem{
     width: 300px;
-    border-radius: 30px;
+    border-radius: 40px;
 }
