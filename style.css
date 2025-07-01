@@ -171,7 +171,6 @@ header{
 	width: 100%;
 	height: auto;
 	border-radius: 8px;
-	margin-bottom: 10px;
 }
 
 .card a {
@@ -179,6 +178,7 @@ header{
 	font-weight: bold;
 	color: #8B0000; /* link vermelho sangue */
 	transition: color 0.3s ease;
+	
 }
 
 .card a:hover {
