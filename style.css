@@ -119,10 +119,11 @@ textarea {
 	border: 1px solid #ddd;
 	border-radius: 10px;
 	padding: 10px;
-	width: 180px;
 	text-align: center;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 	transition: transform 0.2s ease;
+	width: 100%;
+	max-width: 300px;
 }
 
 .card:hover {
@@ -146,18 +147,16 @@ section {
 	margin-bottom: 40px;
 }
 
-/* Para dispositivos móveis: linha única com rolagem horizontal */
+/* Para dispositivos móveis: cards empilhados, sem rolagem horizontal */
 @media (max-width: 599px) {
 	.cardContainer {
-		flex-wrap: nowrap;          /* força os cards ficarem em linha */
-		overflow-x: auto;           /* permite rolagem horizontal */
-		justify-content: flex-start; /* alinhamento à esquerda */
-		-webkit-overflow-scrolling: touch; /* rolagem suave no iOS */
-		padding-bottom: 10px;       /* um pouco de espaço para a rolagem */
+		flex-wrap: wrap;
+		justify-content: center;
+		overflow-x: hidden;
 	}
 	.card {
-		flex: 0 0 auto;             /* cards com largura fixa, sem encolher */
-		width: 180px;               /* mesma largura padrão */
+		width: 100%;
+		max-width: 300px;
 	}
 }
 
