@@ -1,4 +1,4 @@
-// Função para destacar o link ativo do menu conforme a seção visível
+// Destacar link ativo do menu
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll(".opcoes");
   const sections = Array.from(links).map(link => {
@@ -18,5 +18,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   window.addEventListener("scroll", onScroll);
-  onScroll(); // roda no carregamento para ativar o link correto
+  onScroll(); // ativa no carregamento
+
+  // Abrir link do card ao clicar nele
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const link = card.querySelector('a');
+      if (link) {
+        window.open(link.href, '_blank', 'noopener');
+      }
+    });
+  });
+
+  // Previne dupla ação ao clicar no link dentro do card
+  document.querySelectorAll('.card a').forEach(link => {
+    link.addEventListener('click', e => e.stopPropagation());
+  });
 });
