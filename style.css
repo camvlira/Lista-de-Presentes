@@ -43,104 +43,105 @@ table {
 	border-spacing: 0;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+	scroll-behavior: smooth;
 }
 
-body{
-    box-sizing: border-box;
-    position: relative;
-    line-height: 1.5;
-    font-family: sans-serif;
-    overflow-x: hidden;
-    overflow-y: scroll;
+body {
+	box-sizing: border-box;
+	position: relative;
+	line-height: 1.5;
+	font-family: sans-serif;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    /* padding: 1rem 5rem; */
-    width: 1000;
-    background: #fff;
-    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
-    font-size: 62.5%;
-    /* z-index: 1000; */
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 1000px;
+	background: #fff;
+	box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+	font-size: 16px;
 }
 
-h1{
-    font-weight: bold;
+h1 {
+	font-weight: bold;
 }
 
-a{
-    text-decoration: none;
+a {
+	text-decoration: none;
 }
 
-li{
-    list-style: none;
+li {
+	list-style: none;
 }
 
-textarea{
-    resize: none;
+textarea {
+	resize: none;
 }
 
-.headerLinks{
-    display: flex;
-    list-style-type: none;
+.headerLinks {
+	display: flex;
+	list-style-type: none;
 }
 
-.opcoes{
-    /* display: inline-block; */
-    padding: 28px;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #333;
-    transition: color .3s;
+.opcoes {
+	padding: 28px;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #333;
+	transition: color .3s;
 }
 
-.subtitulo{
-    font-weight: bold;
+.subtitulo {
+	font-weight: bold;
 }
 
-.imagem{
-    width: 300px;
-    border-radius: 40px;
+.imagem {
+	width: 100%;
+	border-radius: 10px;
 }
 
 .cardContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* espaço entre os cards */
-    justify-content: center;
-    padding: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	padding: 10px 0;
 }
 
 .card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
-    width: 180px;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 10px;
+	width: 180px;
+	text-align: center;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease;
 }
 
 .card:hover {
-    transform: scale(1.03);
+	transform: scale(1.03);
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 10px;
 }
 
 .card a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #3b5998;
+	text-decoration: none;
+	font-weight: bold;
+	color: #3b5998;
+}
+
+section {
+	margin-bottom: 40px;
 }
