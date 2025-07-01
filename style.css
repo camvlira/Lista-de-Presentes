@@ -147,19 +147,19 @@ section {
 }
 
 /* Para dispositivos móveis: linha única com rolagem horizontal */
-@media (max-width: 599px) {
+/* @media (max-width: 599px) {
 	.cardContainer {
 		flex-wrap: nowrap;          /* força os cards ficarem em linha */
 		overflow-x: auto;           /* permite rolagem horizontal */
 		justify-content: flex-start; /* alinhamento à esquerda */
 		-webkit-overflow-scrolling: touch; /* rolagem suave no iOS */
 		padding-bottom: 10px;       /* um pouco de espaço para a rolagem */
-	}
+	/* }
 	.card {
 		flex: 0 0 auto;             /* cards com largura fixa, sem encolher */
 		width: 180px;               /* mesma largura padrão */
-	}
-}
+	/* } 
+/* } 
 
 /* Media Query para telas maiores (tablets, desktops) */
 @media (min-width: 600px) {
