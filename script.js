@@ -36,3 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener('click', e => e.stopPropagation());
   });
 });
+
+// function tocarSom() {
+//   const som = new Audio('coin-insert.mp3'); // som estilo arcade
+//   som.play();
+// }
