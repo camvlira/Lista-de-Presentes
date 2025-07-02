@@ -53,7 +53,7 @@ body {
 	line-height: 1.5;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	font-family: 'Press Start 2P', monospace;
+	font-family: monospace;
 	background-color: #111010;
 	color: #e0e0e0;
 	background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
