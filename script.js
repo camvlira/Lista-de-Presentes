@@ -37,7 +37,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// function tocarSom() {
-//   const som = new Audio('coin-insert.mp3'); // som estilo arcade
-//   som.play();
-// }
+
+//Musica
+document.getElementById('logo-som').addEventListener('click', () => {
+  const iframe = document.getElementById('bg-music');
+  let src = iframe.src;
+
+  if (src.includes('mute=1')) {
+    // desmutar
+    src = src.replace('mute=1', 'mute=0');
+    iframe.src = src;
+    iframe.style.display = 'block'; // mostra iframe pra garantir som
+  } else {
+    // mutar
+    src = src.replace('mute=0', 'mute=1');
+    iframe.src = src;
+    // se quiser, esconde depois
+    // iframe.style.display = 'none';
+  }
+});
