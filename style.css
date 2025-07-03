@@ -207,8 +207,10 @@ header {
 
 .livros-mangas .card img {
   height: 400px;
+}
 
-
+.albuns .card img {
+  height: 350px;
 }
 
 .card a {
