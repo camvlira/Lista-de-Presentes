@@ -1,0 +1,278 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	box-sizing: border-box;
+	position: relative;
+	line-height: 1.5;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	font-family: monospace;
+	font-size: 20px;
+	background-color: #111010;
+	color: #e0e0e0;
+	background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
+	background-size: 10px 10px;
+}
+main{
+	padding-top: 60px;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+textarea {
+	resize: none;
+}
+
+header {
+  width: 100%;
+  height: 55px; /* define altura fixa */
+  padding: 5px 0;
+  position: fixed;
+  background: #310101;
+  border-bottom: 2px solid #8B0000;
+  box-shadow: 0 5px 30px rgba(139, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
+#logo-som {
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#logo-som:hover {
+  filter: drop-shadow(0 0 15px #ff1a1a);
+  transform: scale(1.15);
+}
+
+.header_content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.header_logo_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerImagem img.logo {
+  height: 40px;
+  width: auto;
+}
+
+.headerTitulo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #F9F9F9;
+  text-shadow: 0 0 5px #F9F9F9;
+}
+
+.headerLinks {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.opcoes {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F9F9F9;
+  transition: color 0.3s, border-bottom 0.3s;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-bottom: 2px solid transparent;
+  text-shadow: 0 0 4px #F9F9F9;
+}
+
+.opcoes.ativo {
+  	color: #8B0000;
+	border-bottom: 2px solid #8B0000;
+	text-shadow: 0 0 4px #8B0000;
+}
+
+.subtitulo {
+	margin-bottom: 15px;
+	font-weight: bold;
+	color: #8B0000;
+    text-shadow: 0 0 5px #8B0000, 0 0 10px #8B0000;
+    text-align: center;
+	text-transform: uppercase;
+}
+
+.imagem {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.cardContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	padding: 10px 0;
+}
+
+.card {
+  background-color: #121212;
+  border: 1px solid #300000;
+  box-shadow: 0 0 8px #8B0000, 0 0 10px #8B0000 inset;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 50px;
+  padding: 10px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+
+.card:hover {
+	transform: scale(1.03);
+	border-color: #8B0000;
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+.livros-mangas .card img {
+  height: 400px;
+}
+
+.albuns .card img {
+  height: 350px;
+}
+
+.card a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #F9F9F9;
+	text-shadow: 0 0 3px #F9F9F9;
+	transition: color 0.3s ease;
+	
+}
+
+.card a:hover {
+  color: #ff1a1a;
+  text-shadow: 0 0 5px #ff1a1a;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+/* Para dispositivos móveis: cards empilhados, sem rolagem horizontal */
+@media (max-width: 599px) {
+	.cardContainer {
+		flex-wrap: wrap;
+		justify-content: center;
+		overflow-x: hidden;
+	}
+	.card {
+		width: calc(50% - 20px); /* Dois cards por linha */
+	}
+}
+
+/* Media Query para telas maiores (tablets, desktops) */
+@media (min-width: 600px) {
+  .card {
+    width: calc(50% - 20px); /* Dois cards por linha */
+  }
+}
+
+@media (min-width: 900px) {
+  .card {
+    width: calc(33.33% - 20px); /* Três cards por linha */
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: calc(18% - 20px); /* Quatro cards por linha */
+  }
+}
+
+@keyframes logoPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px #8B0000);
+    opacity: 1;
+  }
+  50% {
+    filter: drop-shadow(0 0 20px #ff0000);
+    opacity: 0.7;
+  }
+}
+
+.headerImagem img.logo {
+  animation: logoPulse 2s infinite ease-in-out;
+}
